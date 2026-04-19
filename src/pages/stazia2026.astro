@@ -31,6 +31,27 @@
 			audio {
 				width: min(92vw, 360px);
 			}
+			.download-btn {
+			display: inline-block;
+				padding: 0.8rem 1.1rem;
+				border: 3px dashed #7b2cff;
+				border-radius: 999px;
+				background: linear-gradient(135deg, #6affc8, #8fe0ff, #ffc861);
+				color: #222;
+				font-weight: 700;
+				text-decoration: none;
+				box-shadow: 6px 6px 0 #222;
+				transform: rotate(-2deg);
+				transition: transform 0.12s ease, box-shadow 0.12s ease;
+			}
+			.download-btn:hover {
+				transform: rotate(2deg) translateY(-2px);
+				box-shadow: 8px 8px 0 #222;
+			}
+			.download-btn:active {
+				transform: translateY(1px);
+				box-shadow: 4px 4px 0 #222;
+			}
 		</style>
 	</head>
 	<body>
@@ -40,6 +61,9 @@
 				<source src="/stazia2026.m4a" type="audio/mp4" />
 				<source src="/stazia2026.mp3" type="audio/mpeg" />
 			</audio>
+			<a class="download-btn" href="/stazia2026.m4a" download>
+				⬇️ Download lydfil
+			</a>
 		</main>
 	</body>
 </html>
